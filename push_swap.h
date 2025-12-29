@@ -11,7 +11,8 @@ typedef struct	s_node
 	struct s_node	*next;
 }	t_node;
 
-int	parse_args(int ac, char **av, t_node **a);
+long	ft_atol(const char *s);
+int	parse_args(int argc, char **argv, t_node **a);
 
 t_node	*lst_new(int value);
 void	lst_add_back(t_node **lst, t_node *new);
